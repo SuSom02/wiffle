@@ -1,5 +1,8 @@
+// vite.config.js
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/wiffle/',  // GitHub Pages에서 호스팅되는 경로
+  base: '/wiffle/',  // 이 줄 추가!!
+  plugins: [react()],
 })
